@@ -1,0 +1,263 @@
+﻿[
+    {
+        "id":  "gor-staff",
+        "name":  "Gor Staff",
+        "path":  "D:\\prodect\\Gor Staff",
+        "group":  "Main",
+        "kind":  "node-workspace",
+        "description":  "Проект Gory Staff. В package.json есть серверный workspace.",
+        "url":  "http://localhost:3000",
+        "ports":  [
+
+                  ],
+        "start":  {
+                      "type":  "npm",
+                      "script":  "server"
+                  },
+        "stop":  {
+                     "type":  "managed-process"
+                 },
+        "enabledActions":  [
+                               "start",
+                               "stop",
+                               "restart",
+                               "logs",
+                               "openPath"
+                           ]
+    },
+    {
+        "id":  "tg",
+        "name":  "Messenger / Onda",
+        "path":  "D:\\prodect\\Tg",
+        "group":  "Main",
+        "kind":  "node-vite-express",
+        "description":  "Vite + Node server. Разрешён запуск backend-скрипта server.",
+        "url":  "http://localhost:5173",
+        "ports":  [
+                      5173
+                  ],
+        "start":  {
+                      "type":  "npm",
+                      "script":  "server"
+                  },
+        "stop":  {
+                     "type":  "managed-process"
+                 },
+        "enabledActions":  [
+                               "start",
+                               "stop",
+                               "restart",
+                               "logs",
+                               "openPath",
+                               "openUrl"
+                           ]
+    },
+    {
+        "id":  "cultur",
+        "name":  "Cultur",
+        "path":  "D:\\prodect\\Cultur",
+        "group":  "Apps",
+        "kind":  "node-workspace",
+        "description":  "Monorepo с API и mobile. Разрешён запуск dev API.",
+        "url":  "http://localhost:3000",
+        "ports":  [
+
+                  ],
+        "start":  {
+                      "type":  "npm",
+                      "script":  "dev:api"
+                  },
+        "stop":  {
+                     "type":  "managed-process"
+                 },
+        "enabledActions":  [
+                               "start",
+                               "stop",
+                               "restart",
+                               "logs",
+                               "openPath"
+                           ]
+    },
+    {
+        "id":  "cat-voice",
+        "name":  "Cat Voice",
+        "path":  "D:\\prodect\\cat_voice_fix",
+        "group":  "Mobile",
+        "kind":  "expo",
+        "description":  "Expo/React Native приложение. Можно запускать Expo start, если нужен dev-сервер.",
+        "url":  "http://localhost:8081",
+        "ports":  [
+                      8081
+                  ],
+        "start":  {
+                      "type":  "npm",
+                      "script":  "start"
+                  },
+        "stop":  {
+                     "type":  "managed-process"
+                 },
+        "enabledActions":  [
+                               "start",
+                               "stop",
+                               "restart",
+                               "logs",
+                               "openPath",
+                               "openUrl"
+                           ]
+    },
+    {
+        "id":  "ai-startup-radar",
+        "name":  "AI поиск стартапов",
+        "path":  "D:\\prodect\\ai-startup-radar-v5-final",
+        "group":  "Docker",
+        "kind":  "docker-compose",
+        "description":  "Есть docker-compose и start-local.bat. Запуск разрешён только через docker compose из конфига.",
+        "url":  "",
+        "ports":  [
+
+                  ],
+        "start":  {
+                      "type":  "docker-compose",
+                      "action":  "up"
+                  },
+        "stop":  {
+                     "type":  "docker-compose",
+                     "action":  "down"
+                 },
+        "enabledActions":  [
+                               "start",
+                               "stop",
+                               "restart",
+                               "logs",
+                               "openPath"
+                           ]
+    },
+    {
+        "id":  "vpn-bot",
+        "name":  "Fix VPN / vpn_bot",
+        "path":  "D:\\prodect\\vpn_bot",
+        "group":  "Docker",
+        "kind":  "docker-compose",
+        "description":  "Docker-проект с .env. Запуск разрешён только через docker compose из конфига.",
+        "url":  "",
+        "ports":  [
+
+                  ],
+        "start":  {
+                      "type":  "docker-compose",
+                      "action":  "up"
+                  },
+        "stop":  {
+                     "type":  "docker-compose",
+                     "action":  "down"
+                 },
+        "enabledActions":  [
+                               "start",
+                               "stop",
+                               "restart",
+                               "logs",
+                               "openPath"
+                           ]
+    },
+    {
+        "id":  "ai-kanal",
+        "name":  "ai kanal",
+        "path":  "D:\\prodect\\ai kanal",
+        "group":  "Other",
+        "kind":  "folder",
+        "description":  "Папка проекта без найденного package.json/docker-compose на верхнем уровне.",
+        "url":  "",
+        "ports":  [
+
+                  ],
+        "enabledActions":  [
+                               "openPath"
+                           ]
+    },
+    {
+        "id":  "alarm-app",
+        "name":  "alarm_app_v5",
+        "path":  "D:\\prodect\\alarm_app_v5",
+        "group":  "Other",
+        "kind":  "folder",
+        "description":  "Папка проекта без найденного package.json/docker-compose на верхнем уровне.",
+        "url":  "",
+        "ports":  [
+
+                  ],
+        "enabledActions":  [
+                               "openPath"
+                           ]
+    },
+    {
+        "id":  "fpv",
+        "name":  "FPV",
+        "path":  "D:\\prodect\\FPV",
+        "group":  "Other",
+        "kind":  "folder",
+        "description":  "Папка проекта без найденного package.json/docker-compose на верхнем уровне.",
+        "url":  "",
+        "ports":  [
+
+                  ],
+        "enabledActions":  [
+                               "openPath"
+                           ]
+    },
+    {
+        "id":  "mentor",
+        "name":  "Mentor",
+        "path":  "D:\\prodect\\Mentor",
+        "group":  "Mobile",
+        "kind":  "bat-project",
+        "description":  "Есть build_apk.bat. Запуск bat из панели отключён.",
+        "url":  "",
+        "ports":  [
+
+                  ],
+        "enabledActions":  [
+                               "openPath"
+                           ]
+    },
+    {
+        "id":  "rocket-game",
+        "name":  "rocket-game",
+        "path":  "D:\\prodect\\rocket-game",
+        "group":  "Games",
+        "kind":  "folder",
+        "description":  "Папка проекта без найденного package.json/docker-compose на верхнем уровне.",
+        "url":  "",
+        "ports":  [
+
+                  ],
+        "enabledActions":  [
+                               "openPath"
+                           ]
+    },
+    {
+        "id":  "kaz",
+        "name":  "каз",
+        "path":  "D:\\prodect\\каз",
+        "group":  "Other",
+        "kind":  "bat-project",
+        "description":  "Есть start.bat и .env. Запуск разрешён только через start.bat из конфига.",
+        "url":  "",
+        "ports":  [
+
+                  ],
+        "start":  {
+                      "type":  "bat",
+                      "file":  "start.bat"
+                  },
+        "stop":  {
+                     "type":  "managed-process"
+                 },
+        "enabledActions":  [
+                               "start",
+                               "stop",
+                               "restart",
+                               "logs",
+                               "openPath"
+                           ]
+    }
+]
